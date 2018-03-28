@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "日志"
+}{
+  "navigationBarTitleText": "日志"
+}{
+  "navigationBarTitleText": "日志"
+}<template name="connects">
+  <view class="connects">
+  <view class='connects_box' wx:for="{{activity}}" >
+  <image src="{{item}}" class='connects_img' mode="widthFix"></image>  </view>     
+  </view>
+</template>

@@ -1,0 +1,3 @@
+<view bindtap='demo' class='demo'>
+   <map id="ofoMap" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{scale}}" style="height:{{winHeight?winHeight+'rpx':'350rpx'}};width:100%;" bindregionchange="bindregionchange" polyline="{{polyline}}" markers="{{markers}}" controls="{{controls}}" bindmarkertap="bindmarkertap"  bindcontroltap="bindcontroltap" show-location/>
+</view>

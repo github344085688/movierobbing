@@ -1,0 +1,10 @@
+
+<template name="slideList">
+  <view class='movie-list-container'>
+    <scroll-view scroll-x="true" class='movies-container' >
+      <block wx:for="{{moverlist}}" wx:key="key">{{item}}
+
+      </block>
+    </scroll-view>
+  </view>
+</template>

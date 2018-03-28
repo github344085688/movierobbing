@@ -1,0 +1,15 @@
+<template name="movieTemplate">
+  <view class="movie-container">
+    <view class="movie-imgbox" catchtap="onMovieTap" data-id="{{id}}" >
+      <image class='movie-img' src="{{imagesurl}}" mode="widthFix"></image>
+    </view>
+    <view class="movie-title" wx:if="{{name}}">
+      <view>{{name}}</view>
+      <view> {{pingfen}}</view>
+    </view>
+    <view class="movie-title" wx:if="{{pename}}">
+      <view>{{pename}}</view>
+      <view> {{petype}}</view>
+    </view>
+  </view>
+</template>

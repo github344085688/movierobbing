@@ -1,0 +1,16 @@
+<template name="titleBox">
+    <view class='actititle'>
+        <view class='actititle_box'>
+            <image src='{{actititle}}' class='actititle_img' mode="widthFix"></image>
+        </view>
+
+        <!--倒计时  -->
+        <view class="actititle_timing">
+            <view class="timing">{{countDownDay}}天</view>
+            <view class="timing">{{countDownHour}}时</view>
+            <view class="timing">{{countDownMinute}}分</view>
+            <view class="timing">{{countDownSecond}}秒</view>
+        </view>
+
+    </view>
+</template>

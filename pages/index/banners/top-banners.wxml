@@ -1,0 +1,5 @@
+<template name="topBanners">
+  <view class='banner_box'>
+    <image class='banner-img' src="{{banners}}" mode="widthFix"></image>
+  </view>
+</template>

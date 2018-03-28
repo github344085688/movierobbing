@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",  
+    "pages/map/map",
+    "pages/template-lists/movie-detail/movie-detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"#fff",
+    "navigationBarBackgroundColor": "#3a3633",
+    "navigationBarTitleText": "x厦门",
+    "navigationBarTextStyle": "#3a3633"
+
+  }
+}

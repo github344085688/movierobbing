@@ -1,0 +1,44 @@
+@rpx: 1rpx/1;
+.border(@style, @a:1,@b:1,@c:1,@d:1, @stl:solid) when (isnumber(@a, @b, @c, @d)) {
+  border-top:   @style @a*@rpx @stl;
+  border-right: @style @b*@rpx @stl;
+  border-bottom:@style @c*@rpx @stl;
+  border-left:  @style @d*@rpx @stl;
+}
+.margin( @a:auto,@b:auto,@c:auto,@d:auto){
+  margin-top:    @a;
+  margin-right:  @b;
+  margin-bottom: @c;
+  margin-left:   @d;
+}
+.position( @a:1,@b:1,@c:1,@d:1)when (isnumber(@a, @b, @c, @d)){
+  top:    @a*@rpx;
+  right:  @b*@rpx;
+  bottom: @c*@rpx;
+  left:   @d*@rpx;
+}
+.padding( @a:1,@b:1,@c:1,@d:1)when (isnumber(@a, @b, @c, @d)){
+  padding-top:    @a*@rpx;
+  padding-right:  @b*@rpx;
+  padding-bottom: @c*@rpx;
+  padding-left:   @d*@rpx;
+}
+.rotate( @a:1)when (isnumber(@a)){
+  transform:rotate(@a*1deg);
+  -ms-transform:rotate(@a*1deg);
+  -moz-transform:rotate(@a*1deg);
+  -webkit-transform:rotate(@a*1deg);
+  -o-transform:rotate(@a*1deg);
+}
+.jus_b( @a:1){
+  display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:stretch;align-content:stretch;
+}
+.jus_start( @a:1){
+  display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:flex-start;align-items:stretch;align-content:stretch;
+}
+.bz( @a:1){
+  box-sizing: border-box;
+}
+
+
+

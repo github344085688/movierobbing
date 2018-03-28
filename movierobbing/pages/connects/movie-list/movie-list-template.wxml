@@ -1,0 +1,10 @@
+<import src="../movie/movie-template.wxml" />
+<template name="movieListTemplate">
+  <view class='movie-list-container'>
+    <scroll-view scroll-x="true" class='movies-container' >
+      <block wx:for="{{moverlist}}" wx:key="key">
+        <template is="movieTemplate" data="{{...item}}" />
+      </block>
+    </scroll-view>
+  </view>
+</template>

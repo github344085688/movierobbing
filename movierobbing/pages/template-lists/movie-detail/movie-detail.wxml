@@ -1,0 +1,31 @@
+<import src="../../connects/movie-list/movie-list-template.wxml"/>
+        <!--电影海报-->
+<swiper class="poster" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+        duration="{{duration}}" mode="widthFix">
+<swiper-item class="swiper" wx:for="{{movers.bannerimg}}" mode="widthFix">
+    <image src="{{item}}" class="slide-image" mode="widthFix"/>
+</swiper-item>
+</swiper>
+        <!--固定模块列表-->
+<view class="tag_boxbg">
+<scroll-view scroll-x="true" class="tag_box" scroll-left="{{scrollLeft}}">
+    <view class="tab-item {{currentTab==0?'bodbtred':''}}" data-current="0" bindtap="swichNav">介绍</view>
+    <view class="tab-item {{currentTab==1?'bodbtred':''}}" data-current="1" bindtap="swichNav">演职人员</view>
+    <view class="tab-item {{currentTab==2?'bodbtred':''}}" data-current="2" bindtap="swichNav">奖项</view>
+    <view class="tab-item {{currentTab==3?'bodbtred':''}}" data-current="3" bindtap="swichNav">图集</view>
+</scroll-view>
+</view>
+        <!--模块列表详情-->
+<swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab"
+        style="height: {{winHeight?winHeight+'rpx':'auto'}}">
+<swiper-item wx:for="{{[0,1,2,3]}}">
+    <scroll-view scroll-y="true" style="max-height: {{winHeight?winHeight+'rpx':'auto'}}">
+        <view class="plot-intr">剧情简介</view>
+        <view class="brief">{{movers.juqingjs}}</view>
+        <view class="plot-intr">演职人员</view>
+        <view class="movies-template">
+            <template is="movieListTemplate" data="{{...movers}}"/>
+        </view>
+    </scroll-view>
+</swiper-item>
+</swiper>

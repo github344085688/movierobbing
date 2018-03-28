@@ -1,0 +1,28 @@
+@import "../../less/publick.less";
+@import "../../connects/movie-list/movie-list-template.less";
+.poster{height: 420rpx;
+  .swiper{width: 100%; background: #8A8A8A;
+    .slide-image { width: 100%;}
+  }
+}
+.tag_boxbg{.border(#eee,0,0,5,0); font-size: 16px; .margin(25rpx,auto,25rpx,auto);padding:0;height: 80rpx; position: relative;width: 96%;  display: block;box-sizing: border-box;
+  .tag_box{.jus_start; position:absolute;white-space: nowrap; .position(0,0,0,0);  overflow: hidden;  display: block;height: 80rpx;box-sizing: border-box;
+    .tab-item{align-self: center;line-height: 80rpx;.border(#eee,0,0,5,0); height:100%;.padding(0,25rpx,0,25rpx);box-sizing: border-box; display:inline-block; }
+    .bodbtred{.border(#ef4238,0,0,5,0);}
+  }
+}
+
+.tab-content{margin-top: 10rpx;  padding-left: 2%; padding-right: 2%; box-sizing: border-box;
+    .plot-intr{ width: 100%;.margin(30rpx,auto,40rpx,auto); height: 35rpx;padding-left: 15rpx; line-height: 35rpx; font-size: 32rpx; .border(#ef4238,0,0,0,5);box-sizing: border-box;}
+    .brief{ width: 100%;.margin(10rpx,auto,40rpx,auto); font-size: 30rpx; padding-bottom: 5px;}
+    .Performers_list{display:flex;flex-direction: row;white-space: nowrap; justify-content: space-between;
+      .list-item{ display: inline-block;flex-direction: row;padding-left: 5rpx;padding-right: 5rpx;width: 200rpx; box-sizing: border-box;
+        .item-img {width: 100%; display: block;}
+      }
+
+    }
+}
+.movies-template {
+  margin-bottom: 5rpx;
+  margin-top: 30rpx;
+}

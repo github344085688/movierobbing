@@ -1,0 +1,23 @@
+
+<!--导航 -->
+<view class="nav_box">
+    <view class="nav_boxpo {{scrollbt==true?'position':''}}">
+        <view class="nav-boxs">
+            <image src="../../images/nav01.png" class="nav-image"/>
+            首页
+        </view>
+        <view class="nav-boxs" catchtap="gotomap">
+            <image src="../../images/nav02.png" class="nav-image"/>
+            周边
+        </view>
+        <view class="nav-boxs">
+            <image src="../../images/nav03.png" class="nav-image"/>
+            最新预告
+        </view>
+        <view class="nav-boxs">
+            <image src="../../images/nav04.png" class="nav-image"/>
+            会员中心
+        </view>
+    </view>
+</view>
+        <!--导航 -->

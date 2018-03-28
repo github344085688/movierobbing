@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<import src="../connects/movie-list/movie-list-template.wxml"/>
+<import src="./banners/top-banners.wxml"/>
+<import src="./connects/connects.wxml"/>
+<import src="./title-box/title-box.wxml"/>
+<import src="../template-lists/commodity-list/commodity-list.wxml"/>
+        <!--banners -->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<swiper-item class="swiper" wx:for="{{imgUrls}}">
+    <image src="{{item}}" class="slide-image"/>
+</swiper-item>
+</swiper>
+        <!--banners -->
+        <!--导航 -->
+<view class="nav_box">
+<view class="nav_boxpo {{scrollbt==true?'position':''}}">
+    <view class="nav-boxs">
+        <image src="../../images/nav01.png" class="nav-image"/>
+        首页
+    </view>
+    <view class="nav-boxs" catchtap="gotomap">
+        <image src="../../images/nav02.png" class="nav-image"/>
+        周边
+    </view>
+    <view class="nav-boxs">
+        <image src="../../images/nav03.png" class="nav-image"/>
+        最新预告
+    </view>
+    <view class="nav-boxs">
+        <image src="../../images/nav04.png" class="nav-image"/>
+        会员中心
+    </view>
+</view>
+</view>
+        <!--导航 -->
+        <!--促销 -->
+<view>
+<template is="topBanners" data="{{banners}}"/>
+</view>
+<view>
+<template is="connects" data="{{activity}}"/>
+</view>
+        <!--促销 -->
+
+<view class='hr'></view>
+
+        <!--秒杀 -->
+<view>
+<template is="titleBox" data="{{...datatime}}"/>
+</view>
+<view class="movies-template">
+<template is="movieListTemplate" data="{{moverlist}}"/>
+</view>
+        <!--秒杀 -->
+
+<view class='hr'></view>
+
+
+<view>
+<template is="commodityList" data="{{miaosjson}}"/>
+</view>

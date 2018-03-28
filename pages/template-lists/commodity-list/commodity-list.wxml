@@ -1,0 +1,25 @@
+<template name="commodityList">
+    <view class="commoditylist">
+        <view class="commodityitem" wx:for="{{miaosjson}}" wx:key="key" mode="widthFix">
+            <view class='image_box' catchtap="onMovieTap" data-id="{{item.id}}">
+                <view class='ttopright' wx:if="{{item.host==true}}">
+                </view>
+                <view class='topright' wx:if="{{item.host==true}}">
+                    host
+                </view>
+                <image class='movieemg' src="{{item.imagesurl}}" mode="widthFix"></image>
+
+            </view>
+            <view class='title_bgs'></view>
+                <view class='title_box'>
+
+                <view class="tit">
+                    <view class="title">{{item.name}}</view>
+                    <view class="jshao">{{item.time}}</view>
+                </view>
+                <view class="pinf">{{item.pingfen}}</view>
+
+            </view>
+        </view>
+    </view>
+</template>

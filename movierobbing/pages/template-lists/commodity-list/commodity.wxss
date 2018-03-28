@@ -1,0 +1,138 @@
+.commoditylist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: 0;
+  margin-right: 25rpx;
+  margin-bottom: 0;
+  margin-left: 25rpx;
+  box-sizing: border-box;
+  padding-top: 0rpx;
+  padding-right: 0rpx;
+  padding-bottom: 15rpx;
+  padding-left: 0rpx;
+}
+.commoditylist .commodityitem {
+  box-sizing: border-box;
+  width: 48.8%;
+  margin-top: 25rpx;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  position: relative;
+  display: block;
+  padding-top: 0rpx;
+  padding-right: 0rpx;
+  padding-bottom: 6rpx;
+  padding-left: 0rpx;
+}
+.commoditylist .commodityitem .image_box {
+  position: relative;
+  z-index: 1;
+}
+.commoditylist .commodityitem .image_box .ttopright {
+  width: 0;
+  height: 0;
+  border-top: 60rpx solid red;
+  border-left: 60rpx solid transparent;
+  position: absolute;
+  top: -3rpx;
+  right: 0;
+}
+.commoditylist .commodityitem .image_box .topright {
+  font-size: 24rpx;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  overflow: hidden;
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+}
+.commoditylist .commodityitem .image_box .movieemg {
+  width: 97%;
+  display: block;
+  margin-top: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+.commoditylist .commodityitem .title_bgs {
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 96rpx;
+  border-top: #e8e8e8 0rpx solid;
+  border-right: #e8e8e8 1rpx solid;
+  border-bottom: #e8e8e8 1rpx solid;
+  border-left: #e8e8e8 1rpx solid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+  -moz-box-shadow: 0px 0px 1px #8A8A8A;
+  -webkit-box-shadow: 0px 0px 1px #8A8A8A;
+  box-shadow: 0px 0px 1px #8A8A8A;
+}
+.commoditylist .commodityitem .title_box {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 2;
+  border-top: #e8e8e8 1rpx solid;
+  border-right: #e8e8e8 0rpx solid;
+  border-bottom: #e8e8e8 0rpx solid;
+  border-left: #e8e8e8 0rpx solid;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+  box-sizing: border-box;
+}
+.commoditylist .commodityitem .title_box .tit {
+  flex: 3;
+  font-size: 30rpx;
+}
+.commoditylist .commodityitem .title_box .tit .title {
+  display: block;
+  padding-top: 0rpx;
+  padding-right: 15rpx;
+  padding-bottom: 0rpx;
+  padding-left: 15rpx;
+}
+.commoditylist .commodityitem .title_box .tit .jshao {
+  display: block;
+  font-size: 25rpx;
+  padding-top: 0rpx;
+  padding-right: 15rpx;
+  padding-bottom: 0rpx;
+  padding-left: 15rpx;
+}
+.commoditylist .commodityitem .title_box .pinf {
+  flex: 1;
+  ont-size: 30rpx;
+  align-self: center;
+  text-align: center;
+  border-top: #818080 0rpx solid;
+  border-right: #818080 0rpx solid;
+  border-bottom: #818080 0rpx solid;
+  border-left: #818080 1rpx solid;
+}
